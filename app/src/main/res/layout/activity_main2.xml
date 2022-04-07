@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
-        android:text="Escolha o jogo"
+        android:text="Escolha o  tipo de jogo"
         android:textColor="@color/black"
         android:textSize="25dp" />
 
