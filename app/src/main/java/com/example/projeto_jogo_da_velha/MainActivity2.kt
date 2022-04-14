@@ -15,6 +15,7 @@ class MainActivity2 : AppCompatActivity() {
 
         playerVSplayer.setOnClickListener{
            val intent = Intent(this, playerVSplayer::class.java)
+               MainActivity.putExtra("nome", value"")
             startActivity(intent)
         }
 

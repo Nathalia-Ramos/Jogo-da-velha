@@ -12,7 +12,7 @@ class jogo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_jogo)
-        
+
 
         fun btClick(cellID: Int, view: View) {
             val btSelecionado = view as Button
@@ -61,7 +61,7 @@ class jogo : AppCompatActivity() {
              var winer = -1
 
 
-            //linha 1
+            ///////////////*************HORIZONTAL*******************///////////
             if(player1.contains(1) && player1.contains(2) && player1.contains(3)){
                 winer = 1
             }
@@ -84,7 +84,7 @@ class jogo : AppCompatActivity() {
                 winer = 1
             }
 
-            if(player2.contains(7) && player2.contains(8) && player2.contains(9)){
+            if (player2.contains(7) && player2.contains(8) && player2.contains(9)){
                 winer = 2
             }
 
@@ -152,7 +152,7 @@ class jogo : AppCompatActivity() {
                 if(winer == 1 ){
                     Toast.makeText(this, "O jogador 1 ganhou", Toast.LENGTH_SHORT).show()
                 }else{
-                    Toast.makeText(this, "O computador ganhou", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "O jogador 2 ganhou", Toast.LENGTH_SHORT).show()
                 }
             }
         }
